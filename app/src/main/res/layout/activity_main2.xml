@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/topLeft"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="@color/blue"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/topMiddle"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="@color/orange"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/topRight"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:layout_toRightOf="@+id/topMiddle"
+        android:layout_marginLeft="56dp"/>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/blue"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/orange"
+        android:layout_alignBottom="@id/bottom"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="200dp"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/orange"
+        android:layout_alignBottom="@id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="200dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/blue"/>
+
+</RelativeLayout>
